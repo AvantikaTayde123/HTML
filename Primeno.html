@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log("Enter no in interval")
+        // let n1=parseInt(prompt("Enter the first no : "))
+        // let n2=parseInt(prompt("Enter the second no : "))
+        // let ans;
+        // for(let i=n1;i<n2;i++){
+        //     for(let j=2; j<i; j++){
+        //         ans=false;
+
+        //         if(i%j==0){
+        //             ans==true;
+        //             break;
+        //         }
+        //     }
+        // if (ans==false){
+        //     console.log(i+" ,")
+        // }
+        // }
+        //////
+
+    
+        let no=parseInt(prompt("Enter a no:"));
+        let count=0;
+
+        for(let i=2; i<no;i++){
+
+            if(no%i==0){
+                count++;
+            }
+        }
+        if(count>0){
+            console.log("not prime")
+        }
+        else{
+            console.log("prime")
+
+        }
+        /////
+
+        
+    </script>
+</body>
+</html>
