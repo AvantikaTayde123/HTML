@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers in Range</title>
+</head>
+<body>
+    <script>
+
+        let start = parseInt(prompt("Enter the starting number of the range:"));
+        let end = parseInt(prompt("Enter the ending number of the range:"));
+
+        function isPrime(number) {
+            if (number <= 1) {
+                return false;
+            }
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        }
+        console.log("Prime numbers between " + start + " and " + end + ":");
+        for (let num = start; num <= end; num++) {
+            if (isPrime(num)) {
+                console.log(num);
+            }
+        }
+    </script>
+</body>
+</html>
