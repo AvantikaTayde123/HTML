@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <script>
+    function sum(){
+        let num1=document.getElementById('a').value;
+        let num2=document.getElementById('b').value;
+        let c=0;
+        for(let i=1;i<=num;i++){
+            c+=i;
+        }
+        document.getElementById('s').innerHTML="sum of natural no. = "+c;
+    }
+</script>
+<body>
+    enter the value of no:<input type="text" id="a"><br><br>
+    enter the value of second no:<input type="text" id="b"><br><br>
+    <input type="submit" value="sum" onclick="sum()">
+    <p id="s">Result</p> -->
+    <script>
+    function sum() {
+        let num1 = parseInt(document.getElementById('a').value);
+        let c = 0;
+        for (let i = 1; i <= num1; i++) {
+            c += i;
+        }
+        document.getElementById('s').innerHTML = "Sum of natural numbers up to " + num1 + " = " + c;
+    }
+</script>
+
+<body>
+    Enter the value of no: <input type="text" id="a"><br><br>
+    <input type="submit" value="sum" onclick="sum()">
+    <p id="s">Result</p>
+</body>
+
+
+
+</body>
+</html>
