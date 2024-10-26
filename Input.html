@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="a">
+        <h1>Find a no:</h1>
+        <input id="input" type="number" placeholder="Enter a no:">
+
+    <button type= "submit" onclick="binary()">Submit</button>
+    </div>
+    <script>
+        function binary(){
+    console.log("hello")
+
+let s=0;
+let flag=0;
+let a=[10,15,18,32,88];
+
+let e=a.length-1;
+//let search=parseInt(prompt("Enter a no: "))
+let search=document.getElementById("input").value
+for(i=0;i<a.length;i++){
+    let m=parseInt((s+e)/2);
+    if(search==a[m]){
+        flag=1;
+        break;
+    }
+    else if(search>a[m]){
+        s=m+1;
+    }
+    else{
+        e=m-1;
+    }
+}
+if(flag==1){
+    //console.log("found");
+    alert("found");
+}
+else{
+    //console.log("not found");
+    alert("not found");
+}
+        }
+
+//binary();
+    </script>
+    
+
+    
+</body>
+</html>
