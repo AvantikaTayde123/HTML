@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swap Two Variables</title>
+    </head>
+    <body>
+        <h1>Swap Two Variables</h1>
+        <label for="a">Enter value of a: </label>
+        <input type="number" id="a"><br><br>
+        
+        <label for="b">Enter value of b: </label>
+        <input type="number" id="b"><br><br>
+        
+        <button onclick="swapValues()">Swap</button>
+        
+        <p id="result"></p>
+        
+        <script>
+            function swapValues() {
+                
+                let a = parseInt(document.getElementById('a').value);
+                let b = parseInt(document.getElementById('b').value);
+                
+                [a, b] = [b, a];
+                
+                document.getElementById('result').innerHTML = `After swapping: a = ${a}, b = ${b}`;
+            }
+        </script>
+    </body>
+    </html>
+    
+</body>
+</html>
+
