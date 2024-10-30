@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reverse String</h1>
+    <lable for a="Enter a string :" ><input type="text" placeholder="Enter a string" id="a">
+
+    </lable>
+    <button onclick="reverse()">Result</button>
+    <input type = "text" id = "result" readonly>
+    <!-- <p id="result"></p> -->
+
+    <script>
+        function reverse() {
+            let a=document.getElementById("a").value;
+            let newstr="";
+            for(let i=a.length-1; i>=0;i--){
+                newstr+=a[i];
+            }
+            document.getElementById("result").value=newstr;
+            document.getElementById("a").value="";
+        }
+    </script>
+</body>
+</html>
