@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program to count the number of vowels in a string.
+Input: "javascript" -->
+
+<h1>Enter a string to count vowels</h1>
+<div class="container">
+    <h3>Enter a string : </h3>
+    <input type="text" id="a" placeholder="Enter a string">
+
+    <h3>No of vowels : </h3>
+    <input type="text" id="result" placeholder="result">
+
+    <button onclick ="countvowel()">Count</button>
+</div>
+
+<script>
+    function countvowel(){
+        let n= document.getElementById("a").value;
+        let count=0;
+        for(let i=0;i<n.length;i++){
+            if(n[i]=='a'||n[i]=='e'||n[i]=='i'||n[i]=='o'||n[i]=='u'||n[i]=='A'||n[i]=='E'||n[i]=='I'||n[i]=='O'||n[i]=='U'){
+              count++;
+            }
+        }
+
+        document.getElementById("result").value=count;
+
+    }
+</script>
+</body>
+</html>
