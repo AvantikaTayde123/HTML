@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var details = [{"Eid":1,"EmployeeName":"Shilpi","company":"accencture","salary":"50000", "location":"Indore"},
+                    {"Eid":2,"EmployeeName":"Shreeya","company":"TCS","salary":"51000", "location":"Dewas"},
+                    {"Eid":3,"EmployeeName":"Shraddha","company":"ABC","salary":"45000", "location":"jabalpur"}];
+
+                    document.write("<table border='1' width='100%'>");
+            document.write("<tr>");
+            document.write("<td>Id</td>");
+            document.write("<td>Employee Name</td>");
+            document.write("<td>Company</td>");
+            document.write("<td>Salary</td>");
+            document.write("<td>Location</td>");    
+            document.write("</tr>");    
+            for(var emp of details){
+                document.write("<tr>");
+                document.write(`<td>${emp.Eid}</td>`);
+                document.write("<td>"+emp.EmployeeName+"</td>");
+                document.write("<td>"+emp.company+"</td>");  
+                document.write("<td>"+emp.salary+"</td>");  
+                document.write("<td>"+emp.location+"</td>")
+                document.write("</tr>");    
+            }
+        
+    </script>
+</body>
+</html>
