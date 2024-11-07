@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenate Strings</title>
+</head>
+<body>
+
+    <h2>String Concatenation</h2>
+    <label for="string1">Enter first string:</label>
+    <input type="text" id="string1" placeholder="First string">
+
+    <br><br>
+
+    <label for="string2">Enter second string:</label>
+    <input type="text" id="string2" placeholder="Second string">
+
+    <br><br>
+    <button onclick="concatenateStrings()">Concatenate</button>
+    <input type = "text" id = "result" readonly>
+
+    <br><br>
+
+    <input type="text" id="string3" placeholder="LowerCase string">
+    <button onclick="lowercaseString()">Lowercase string</button>
+    <br><br>
+
+    <input type="text" id="string4" placeholder="Uppercase string">
+    <button onclick="uppercaseString()">Uppercase string</button>
+    <br><br>
+
+    <input type="text" id="paddedString" placeholder="Padded string">
+    <button onclick="addPadding()">Add Padding</button>
+    <br><br>
+
+    <button onclick="resetFields()">Reset</button>
+
+
+    <script>
+
+        function concatenateStrings() {
+            let str1 = document.getElementById("string1").value;
+            let str2 = document.getElementById("string2").value;
+        
+            document.getElementById("result").value = str1.concat(str2);
+        }
+
+        function lowercaseString(){
+            let str1 = document.getElementById("string1").value;
+            let str2 = document.getElementById("string2").value;
+            let str3 = str1.concat(str2);
+    
+            document.getElementById("string3").value = str3.toLowerCase();
+              
+        }
+
+        function uppercaseString(){
+            let str1 = document.getElementById("string1").value;
+            let str2 = document.getElementById("string2").value;
+            let str4=str1.concat(str2);
+        
+            document.getElementById("string4").value = str4.toUpperCase();
+
+        }
+
+        function addPadding() {
+            let str1 = document.getElementById("string1").value;
+            let str2 = document.getElementById("string2").value;
+            let concatenatedString = str1.concat(" ", str2);
+            
+            // Add "Hello " before the concatenated string
+            let paddedString = "Hello " + concatenatedString;
+            document.getElementById("paddedString").value = paddedString;
+        }
+
+        function resetFields() {
+            // Clear all the input fields
+            document.getElementById("string1").value = "";
+            document.getElementById("string2").value = "";
+            document.getElementById("result").value = "";
+            document.getElementById("string3").value = "";
+            document.getElementById("string4").value = "";
+            document.getElementById("paddedString").value = "";
+        }
+    </script>
+    
+</body>
+</html>
