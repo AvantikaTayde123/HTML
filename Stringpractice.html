@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let s = "This is an \"String\" ";
+        let pr = " The \'sun\ rises in the east";
+        let x="good work-'keep it up '";
+        let e= document.createElement('p');
+        e.textContent=s.concat(pr);
+        let p=document.getElementsByTagName('body')[0];
+        p.appendChild(e);
+        //p.appendChild(pr);
+        //s.concat(pr);
+       
+    </script>
+</body>
+</html>
