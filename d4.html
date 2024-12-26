@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <center>
+        <img id="main" src="../Tajmahal.jpg" width="150" height="200"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br>
+        <img onclick="swapimage(this)" id="main" src="../Tajmahal1.jpg" width="150" height="200"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img onclick="swapimage(this)" id="main" src="../Tajmahal2.jpg" width="150" height="200"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img onclick="swapimage(this)" id="main" src="../Tajmahal3.jpg" width="150" height="200"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </center>
+    <script>
+        function swapimage(currentImage){
+            let mainImage = document.getElementById("main");
+            let temp = mainImage.src;
+            mainImage.src = currentImage.src;
+            currentImage.src = temp;
+        }
+    </script>
+    </body>
+</html>
